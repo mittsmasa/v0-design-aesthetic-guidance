@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export function Footer() {
   return (
     <footer className="px-6 py-16 md:py-24">
@@ -9,6 +11,13 @@ export function Footer() {
         <p className="font-serif text-2xl tracking-[0.3em] text-foreground/40">
           Lull
         </p>
+
+        <Link
+          href="/design-system"
+          className="text-xs tracking-[0.2em] text-muted-foreground/40 uppercase transition-colors hover:text-primary"
+        >
+          Design System
+        </Link>
 
         <p className="font-sans text-xs tracking-[0.2em] text-muted-foreground/40">
           &copy; 2026

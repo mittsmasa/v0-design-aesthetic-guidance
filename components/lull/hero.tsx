@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 export function Hero() {
   const [visible, setVisible] = useState(false)
@@ -12,6 +13,23 @@ export function Hero() {
 
   return (
     <section className="relative min-h-svh flex flex-col items-center justify-center px-6">
+      {/* Top navigation */}
+      <nav
+        className={`absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 py-6 md:px-10 md:py-8 transition-all duration-1000 ease-out ${
+          visible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <span className="font-serif text-sm tracking-[0.2em] text-foreground/40">
+          Lull
+        </span>
+        <Link
+          href="/design-system"
+          className="text-xs tracking-[0.2em] text-muted-foreground/50 uppercase transition-colors hover:text-primary"
+        >
+          Design System
+        </Link>
+      </nav>
+
       {/* Subtle light gradient from top-left — asymmetric warmth */}
       <div
         className="pointer-events-none absolute inset-0"
