@@ -1,18 +1,18 @@
 import type { Metadata, Viewport } from 'next'
-import { Shippori_Mincho, Cormorant_Garamond } from 'next/font/google'
+import { Shippori_Mincho, Noto_Serif_JP } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+
+const notoSerifJP = Noto_Serif_JP({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700'],
+  variable: '--font-noto-serif-jp',
+})
 
 const shipporiMincho = Shippori_Mincho({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-shippori-mincho',
-})
-
-const cormorantGaramond = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  variable: '--font-cormorant-garamond',
 })
 
 export const metadata: Metadata = {
@@ -48,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ja" className={`${shipporiMincho.variable} ${cormorantGaramond.variable}`}>
+    <html lang="ja" className={`${notoSerifJP.variable} ${shipporiMincho.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

@@ -6,7 +6,7 @@ export function TypographySection() {
           Typography
         </h2>
         <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-          和文は明朝体の端正さ、英文はセリフ体の品格。文字が呼吸できる余白を確保し、詰め込まない。
+          本文は Noto Serif JP の端正な可読性、ロゴと見出しは Shippori Mincho の繊細な品格。文字が呼吸できる余白を確保し、詰め込まない。
         </p>
       </div>
 
@@ -14,25 +14,25 @@ export function TypographySection() {
       <div className="mb-16 grid gap-12 md:grid-cols-2">
         <div className="flex flex-col gap-4">
           <p className="text-xs tracking-[0.2em] text-muted-foreground/60 uppercase">
-            Primary / Japanese
+            Body / Base
           </p>
           <p className="font-sans text-3xl leading-snug text-foreground">
-            Shippori Mincho
+            Noto Serif JP
           </p>
           <p className="font-sans text-base leading-relaxed text-muted-foreground">
-            横線の細さと縦線の強さのコントラストが「力みのない本気」を体現する明朝体。
+            視認性と可読性に優れた明朝体。本文・UI要素・キャプションなど日常的なテキストすべてに使用。画面上での長文読解にも疲れにくい安定した字形。
           </p>
           <code className="text-xs text-muted-foreground/60 font-mono">font-sans</code>
         </div>
         <div className="flex flex-col gap-4">
           <p className="text-xs tracking-[0.2em] text-muted-foreground/60 uppercase">
-            Display / English
+            Display / Logo
           </p>
-          <p className="font-serif text-3xl leading-snug text-foreground italic">
-            Cormorant Garamond
+          <p className="font-serif text-3xl leading-snug text-foreground">
+            Shippori Mincho
           </p>
           <p className="font-sans text-base leading-relaxed text-muted-foreground">
-            和文明朝と通底する品格。Lull のロゴタイプとしても機能する佇まい。
+            横線の繊細さと縦線の凛とした強さが「力みのない本気」を体現。ロゴタイプとセクション見出しに使用し、特別感を演出。
           </p>
           <code className="text-xs text-muted-foreground/60 font-mono">font-serif</code>
         </div>

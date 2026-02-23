@@ -41,8 +41,8 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-shippori-mincho), 'Georgia', serif;
-  --font-serif: var(--font-cormorant-garamond), 'Georgia', serif;
+  --font-sans: var(--font-noto-serif-jp), 'Georgia', serif;
+  --font-serif: var(--font-shippori-mincho), 'Georgia', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);
   --color-foreground: var(--foreground);
