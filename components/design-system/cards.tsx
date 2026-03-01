@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { Leaf, Drop, Feather, ArrowRight } from "@phosphor-icons/react"
 
 export function CardsSection() {
   return (
@@ -25,6 +26,9 @@ export function CardsSection() {
         {/* Basic Card */}
         <Card>
           <CardHeader>
+            <div className="mb-2">
+              <Leaf weight="thin" size={32} className="text-primary/50" />
+            </div>
             <CardTitle className="font-serif font-light tracking-wide">
               Basic Card
             </CardTitle>
@@ -42,6 +46,9 @@ export function CardsSection() {
         {/* Card with Badge */}
         <Card>
           <CardHeader>
+            <div className="mb-2">
+              <Drop weight="thin" size={32} className="text-primary/50" />
+            </div>
             <CardTitle className="font-serif font-light tracking-wide">
               Featured
             </CardTitle>
@@ -60,6 +67,9 @@ export function CardsSection() {
         {/* Card with Action */}
         <Card>
           <CardHeader>
+            <div className="mb-2">
+              <Feather weight="thin" size={32} className="text-primary/50" />
+            </div>
             <CardTitle className="font-serif font-light tracking-wide">
               Actionable
             </CardTitle>
@@ -73,7 +83,10 @@ export function CardsSection() {
             </p>
           </CardContent>
           <CardFooter className="gap-3">
-            <Button size="sm" className="tracking-wider">View</Button>
+            <Button size="sm" className="tracking-wider">
+              View
+              <ArrowRight weight="light" size={16} />
+            </Button>
             <Button size="sm" variant="outline" className="tracking-wider">Dismiss</Button>
           </CardFooter>
         </Card>
@@ -108,6 +121,7 @@ export function CardsSection() {
               <CardFooter className="gap-3">
                 <Button size="sm" variant="outline" className="tracking-wider">
                   Read More
+                  <ArrowRight weight="light" size={16} />
                 </Button>
               </CardFooter>
             </div>
