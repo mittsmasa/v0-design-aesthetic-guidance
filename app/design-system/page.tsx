@@ -1,6 +1,7 @@
 import { DesignSystemHeader } from "@/components/design-system/header"
 import { ColorPaletteSection } from "@/components/design-system/color-palette"
 import { TypographySection } from "@/components/design-system/typography"
+import { IconographySection } from "@/components/design-system/iconography"
 import { ButtonsSection } from "@/components/design-system/buttons"
 import { FormsSection } from "@/components/design-system/forms"
 import { FeedbackSection } from "@/components/design-system/feedback"
@@ -33,6 +34,7 @@ export default function DesignSystemPage() {
         <div className="flex flex-col gap-32">
           <ColorPaletteSection />
           <TypographySection />
+          <IconographySection />
           <ButtonsSection />
           <FormsSection />
           <FeedbackSection />
