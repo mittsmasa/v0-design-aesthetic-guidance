@@ -16,6 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
+import { PaperPlaneTilt } from "@phosphor-icons/react"
 
 export function FormsSection() {
   const [sliderValue, setSliderValue] = useState([40])
@@ -221,7 +222,10 @@ export function FormsSection() {
             </Label>
           </div>
           <div className="flex gap-4">
-            <Button type="submit" className="tracking-wider">Submit</Button>
+            <Button type="submit" className="tracking-wider">
+              <PaperPlaneTilt weight="light" size={18} />
+              Submit
+            </Button>
             <Button type="button" variant="outline" className="tracking-wider">Cancel</Button>
           </div>
         </form>

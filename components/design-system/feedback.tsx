@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/dialog"
 import { useToast } from "@/hooks/use-toast"
 import { Toaster } from "@/components/ui/toaster"
+import { BellRinging, Warning, CheckCircle, XCircle } from "@phosphor-icons/react"
 
 export function FeedbackSection() {
   const { toast } = useToast()
@@ -126,6 +127,7 @@ export function FeedbackSection() {
                 })
               }}
             >
+              <CheckCircle weight="light" size={18} />
               Show Toast
             </Button>
             <Button
@@ -138,6 +140,7 @@ export function FeedbackSection() {
                 })
               }}
             >
+              <XCircle weight="light" size={18} />
               Show Error Toast
             </Button>
           </div>
@@ -150,7 +153,10 @@ export function FeedbackSection() {
           </h3>
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline">Open Dialog</Button>
+              <Button variant="outline">
+                <Warning weight="light" size={18} />
+                Open Dialog
+              </Button>
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>

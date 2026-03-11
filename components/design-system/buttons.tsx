@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Heart, Mail, Plus, Settings, Trash2 } from "lucide-react"
+import { ArrowRight, Heart, EnvelopeSimple, Plus, GearSix, Trash } from "@phosphor-icons/react"
 
 export function ButtonsSection() {
   return (
@@ -49,23 +49,23 @@ export function ButtonsSection() {
         </h3>
         <div className="flex flex-wrap items-center gap-4">
           <Button>
-            <Mail />
+            <EnvelopeSimple weight="light" />
             Send
           </Button>
           <Button variant="secondary">
-            <Heart />
+            <Heart weight="light" />
             Favorite
           </Button>
           <Button variant="outline">
-            <Plus />
+            <Plus weight="light" />
             Add
           </Button>
           <Button variant="ghost">
-            <Settings />
+            <GearSix weight="light" />
             Settings
           </Button>
           <Button variant="destructive">
-            <Trash2 />
+            <Trash weight="light" />
             Delete
           </Button>
         </div>
@@ -78,16 +78,16 @@ export function ButtonsSection() {
         </h3>
         <div className="flex flex-wrap items-center gap-4">
           <Button size="icon" variant="default">
-            <Plus />
+            <Plus weight="light" />
           </Button>
           <Button size="icon" variant="secondary">
-            <Heart />
+            <Heart weight="light" />
           </Button>
           <Button size="icon" variant="outline">
-            <Settings />
+            <GearSix weight="light" />
           </Button>
           <Button size="icon" variant="ghost">
-            <Mail />
+            <EnvelopeSimple weight="light" />
           </Button>
         </div>
       </div>
@@ -115,7 +115,7 @@ export function ButtonsSection() {
           <div className="flex flex-wrap items-center gap-4">
             <Button className="tracking-wider">
               Get Started
-              <ArrowRight />
+              <ArrowRight weight="light" />
             </Button>
             <Button variant="outline" className="tracking-wider">
               Learn More
